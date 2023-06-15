@@ -18,7 +18,7 @@
         uses: azure/arm-deploy@v1
         with:
           resourceGroupName: ${{ vars.AZURE_RG }}
-          template: ./container-webapp-template.json
+          template: ./ARM-Templates/container-webapp-template.json
           
 
         # output containerName variable from template
