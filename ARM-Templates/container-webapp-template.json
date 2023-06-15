@@ -4,7 +4,7 @@
     "parameters": {
         "webAppName": {
             "defaultValue": "<prefix>devops-dev",
-            "type": "String"
+            "type": "String" 
         },
         "hostingPlanName": {
             "defaultValue": "<prefix>devops-asp",
