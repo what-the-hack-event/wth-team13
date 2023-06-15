@@ -18,8 +18,8 @@
         uses: azure/arm-deploy@v1
         with:
           resourceGroupName: ${{ vars.AZURE_RG }}
-          template: ./azuredeploy.json
-          parameters: storageAccountType=Standard_LRS
+          template: ./container-webapp-template.json
+          
 
         # output containerName variable from template
       - run: echo ${{ steps.deploy.outputs.containerName }}
