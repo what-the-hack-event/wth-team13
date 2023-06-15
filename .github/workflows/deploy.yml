@@ -1,10 +1,7 @@
  name: Azure ARM
- 
  on: [push]
- 
- env: 
+ env:
   targetEnv: dev
-  
  jobs:
     build-and-deploy:
       runs-on: ubuntu-latest
@@ -17,8 +14,6 @@
       - uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-          
-          
 
         # Deploy ARM template
       - name: Run ARM deploy
@@ -26,6 +21,7 @@
         with:
           resourceGroupName: ${{ vars.AZURE_RG }}
           template: ./ARM-Templates/container-webapp-template.json
+          parameters: webAppName=srsssdevops-${{env.targetEnv}}
           
 
         # output containerName variable from template
