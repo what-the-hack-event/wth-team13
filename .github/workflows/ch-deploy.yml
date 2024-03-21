@@ -17,6 +17,6 @@ jobs:
         - name: Deploy Bicep Template
           uses: azure/arm-deploy@v1
           with:
-            scope: /subscriptions/16fbc8d0-52d4-49e2-9d80-887dd122d97e/resourceGroups/<ResourceGroupName>
+            subscriptionId: "16fbc8d0-52d4-49e2-9d80-887dd122d97e"
             resource-group: ${{ vars.RG_CH }}
             template: ./InfrastructureAsCode/main.bicep
