@@ -19,5 +19,6 @@ jobs:
         with:
           subscriptionId: ${{ secrets.uma_sub_id }}
           resourceGroupName: ${{ secrets.uma_resource_grp }}
+          template: ${{ github.repository }}/InfrastructureAsCode/main.bicep
           template: /InfrastructureAsCode/main.bicep
           failOnStdErr: false
