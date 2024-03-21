@@ -1,6 +1,6 @@
 name: Challenge4
 run-name: ${{ github.actor }} is learning GitHub Actions
-on: workflow_dispatch
+on: [workflow_dispatch,push]
 jobs:
   job1:
     runs-on: ubuntu-latest
