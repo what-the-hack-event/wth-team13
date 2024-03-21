@@ -13,8 +13,7 @@ jobs:
         run: |
           az account show
           az group list
-  az-deploy-test:
-    steps:
+
       - name: Azure Deploy
         uses : azure/arm-deploy@v2
         with:
