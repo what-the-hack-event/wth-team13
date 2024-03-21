@@ -17,7 +17,6 @@ jobs:
       - name: Azure Deploy
         uses : azure/arm-deploy@v2
         with:
-          subscriptionId: ${{ secrets.uma_sub_id }}
           resourceGroupName: ${{ secrets.uma_resource_grp }}
-          template: /workspaces/wth-team13/InfrastructureAsCode/main.bicep
+          template: ./InfrastructureAsCode/main.bicep
           failOnStdErr: false
