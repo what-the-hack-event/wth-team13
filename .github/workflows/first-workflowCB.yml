@@ -1,0 +1,23 @@
+name: Challenge4
+run-name: ${{ github.actor }} is learning GitHub Actions
+on: [workflow_dispatch,push]
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step1
+        run: echo Hello, world!
+      - name: Step2
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+  job2:
+    runs-on: ubuntu-latest
+    name: Cowsays
+    steps:
+      - uses: actions/checkout@v2
+      - name: Cowsays Action
+        uses: mscoutermarsh/cowsays-action@master
+        with:
+          text: 'ship ship ship!'
+          color: 'blue'
