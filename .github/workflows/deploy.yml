@@ -12,8 +12,8 @@ on:
           - 'staging'
           - 'production'
         actions:
-            - name: 'Deploy Azure Resource Manager (ARM) Template'
-            
+          - name: 'Deploy Azure Resource Manager (ARM) Template'
+
 jobs:
     build-and-deploy:
         runs-on: ubuntu-latest
