@@ -1,6 +1,6 @@
 name: Challenge4CB
 run-name: ${{ github.actor }} is learning GitHub Actions
-on: [workflow_dispatch, push]
+on: [workflow_dispatch, push, issues]
   issues:
     types: [opened]
 jobs:
