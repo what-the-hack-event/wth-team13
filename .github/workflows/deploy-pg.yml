@@ -14,9 +14,11 @@ jobs:
           az account show
           az group list
   az-deploy-test:
-     uses : azure/arm-deploy@v2
-     with:
-         subscriptionId: ${{ secrets.uma_sub_id }}
-         resourceGroupName: ${{ secrets.uma_resource_group }}
-         template: ./InfrastrucutreAsCode/main.bicep
-         failOnStdErr: false
+    steps:
+      - name: Azure Deploy
+        uses : azure/arm-deploy@v2
+        with:
+          subscriptionId: ${{ secrets.uma_sub_id }}
+          resourceGroupName: ${{ secrets.uma_resource_group }}
+          template: ../InfrastructureAsCode/main.bicep
+          failOnStdErr: false
