@@ -18,5 +18,5 @@ jobs:
           uses: azure/arm-deploy@v1
           with:
             subscriptionId: "16fbc8d0-52d4-49e2-9d80-887dd122d97e"
-            resource-group: ${{ vars.RG_CH }}
+            resourceGroupName: ${{ vars.RG_CH }}
             template: ./InfrastructureAsCode/main.bicep
