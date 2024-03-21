@@ -10,11 +10,11 @@ jobs:
       - name: Job1 Step2
         run: |
           echo Add other actions to build.
-    job1:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Job2 Step1
-              run: echo Hello, Job2!
-            - name: Job2 Step2
-              run: |
-                echo Add other job to build.
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Job2 Step1
+          run: echo Hello, Job2!
+        - name: Job2 Step2
+          run: |
+            echo Add other job to build.
