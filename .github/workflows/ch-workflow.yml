@@ -12,7 +12,10 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
   job2:
-            runs-on: ubuntu-latest
-            steps:
-              - name: GitHub Action from Marketplace
-                uses: actions/cowsay@master
+    runs-on: ubuntu-latest
+    steps:
+      - name: GitHub Action from Marketplace
+        uses: mscoutermarsh/cowsays-action@master
+        with:
+          text: 'ship ship ship!'
+          color: 'red'
