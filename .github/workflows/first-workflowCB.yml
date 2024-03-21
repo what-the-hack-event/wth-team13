@@ -1,4 +1,4 @@
-name: Challenge4
+name: Challenge4CB
 run-name: ${{ github.actor }} is learning GitHub Actions
 on: [workflow_dispatch,push]
 jobs:
