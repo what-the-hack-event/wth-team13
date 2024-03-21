@@ -20,5 +20,5 @@ jobs:
         uses : azure/arm-deploy@v2
         with:
           resourceGroupName: ${{ secrets.uma_resource_grp }}
-          template: InfrastructureAsCode/main copy.bicep
+          template: InfrastructureAsCode/maincopy.bicep
           failOnStdErr: false
