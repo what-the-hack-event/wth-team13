@@ -1,0 +1,13 @@
+name: Challenge4
+run-name: ${{ github.actor }} is learning GitHub Actions
+on: workflow_dispatch
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step1
+        run: echo Hello, world!
+      - name: Step2
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
